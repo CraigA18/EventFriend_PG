@@ -68,12 +68,16 @@
 .event-grid {
   margin-left: 250px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+  
 }
 
 .event-card {
-  position: relative;
-  margin-bottom: 30px;
-  display: inline-block;
+  
+  padding: 20px;
 }
 .image-wrapper {
   position: relative;
@@ -90,9 +94,9 @@
   font-weight: bold;
 }
 .event-grid img {
-  width: auto;
-  height: auto;
-  margin-bottom: 0px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
