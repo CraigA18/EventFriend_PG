@@ -93,6 +93,29 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.event-tag[data-category="party"] {
+  background-color: #9B5DE5;
+}
+.event-tag[data-category="outdoors"] {
+  background-color: #00A878;
+}
+.event-tag[data-category="wellness"] {
+  background-color: #CBAACB;
+}
+.event-tag[data-category="educational"] {
+  background-color: #3A86FF;
+}
+.event-tag[data-category="food"] {
+  background-color: #FF6F3C;
+}
+.event-tag[data-category="shopping"] {
+  background-color: #FF5C8A;
+}
+.event-tag[data-category="community"] {
+  background-color: #FFD23F;
+}
+
 .event-grid img {
   width: 100%;
   height: 200px;
