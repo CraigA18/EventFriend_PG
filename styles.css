@@ -1,0 +1,123 @@
+/* Menu Bar for all Pages  */ 
+.nav-bar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  gap: 10px;
+}
+
+.nav-bar li a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #7A88F5;
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Home Page */
+
+/* Event Categories */ 
+.event-categories {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.event-categories li {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+}
+
+.event-categories li[data-category="party"]  {
+  background-color: #9B5DE5;
+}
+.event-categories li[data-category="outdoors"]  {
+  background-color: #00A878;
+}
+.event-categories li[data-category="wellness"]  {
+  background-color: #CBAACB;
+}
+.event-categories li[data-category="educational"]  {
+  background-color: #3A86FF;
+}
+.event-categories li[data-category="food"]  {
+  background-color: #FF6F3C;
+}
+.event-categories li[data-category="shopping"]  {
+  background-color: #FF5C8A;
+}
+.event-categories li[data-category="community"]  {
+  background-color: #FFD23F;
+}
+
+/* Events Grid Container */
+.event-grid {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.event-card {
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.image-wrapper {
+  position: relative;
+}
+.event-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #9B5DE5;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.event-grid img {
+  width: auto;
+  height: auto;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+/* Text Info Container */
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Headings */
+.event-info h3,
+.event-info h4 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Container for date and time */
+.event-date-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.event-date, .event-time, .event-location {
+  margin: 0;
+  padding: 4px 0;
+}
